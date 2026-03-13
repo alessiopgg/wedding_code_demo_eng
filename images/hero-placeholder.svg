@@ -1,0 +1,14 @@
+<svg width="1600" height="2000" viewBox="0 0 1600 2000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="2000" rx="48" fill="#F6EFE8"></rect>
+  <rect x="60" y="60" width="1480" height="1880" rx="36" stroke="#D4BCAE" stroke-width="2"></rect>
+  <circle cx="1240" cy="360" r="240" fill="#E8D8CD"></circle>
+  <circle cx="420" cy="1510" r="280" fill="#E2C9BC"></circle>
+  <path d="M420 540C540 380 720 280 920 300C1120 320 1260 480 1320 640C1380 800 1350 1010 1240 1180C1130 1350 930 1490 710 1470C490 1450 310 1270 270 1030C230 790 300 700 420 540Z" fill="#DDBEB0"></path>
+  <path d="M440 640C540 510 690 430 850 440C1010 450 1130 570 1170 700C1210 830 1190 980 1100 1110C1010 1240 850 1330 670 1310C490 1290 350 1150 320 960C290 770 340 770 440 640Z" fill="#FDF9F6"></path>
+  <text x="800" y="1620" text-anchor="middle" fill="#7E6559" font-family="Georgia, 'Times New Roman', serif" font-size="86">
+    Replace with your hero photo
+  </text>
+  <text x="800" y="1710" text-anchor="middle" fill="#A38373" font-family="Arial, sans-serif" font-size="34" letter-spacing="3">
+    PREMIUM WEDDING WEBSITE PLACEHOLDER
+  </text>
+</svg>
