@@ -1,10 +1,565 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Charlotte & Oliver | Wedding Weekend</title>
+    <meta
+            name="description"
+            content="A premium one-page wedding website with elegant design, event details, gallery, RSVP form and seating plan."
+    />
+
+    <!-- Elegant typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+            href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap"
+            rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
 </head>
 <body>
-$END$
+<!-- =========================
+     HEADER / NAVIGATION
+     ========================= -->
+<header class="site-header" id="site-header">
+    <div class="container header-inner">
+        <a href="#home" class="brand" aria-label="Go to homepage">
+            <span class="brand-monogram">C&O</span>
+        </a>
+
+        <button
+                class="nav-toggle"
+                id="nav-toggle"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="site-nav"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="site-nav" id="site-nav">
+            <a href="#home">Home</a>
+            <a href="#story">Our Story</a>
+            <a href="#details">Details</a>
+            <a href="#timeline">Timeline</a>
+            <a href="#travel">Travel</a>
+            <a href="#dress-code">Dress Code</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#rsvp">RSVP</a>
+            <a href="#seating">Seating</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <!-- =========================
+         HERO SECTION
+         ========================= -->
+    <section class="hero" id="home">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <p class="eyebrow">Wedding Weekend • Florence, Italy</p>
+                <h1>Charlotte <span>&</span> Oliver</h1>
+                <p class="hero-date">Sunday, June 21, 2026</p>
+                <p class="hero-text">
+                    We are so excited to celebrate our wedding day with the people we love most.
+                    Thank you for being part of this unforgettable chapter of our story.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#rsvp" class="btn btn-primary">Confirm Your Attendance</a>
+                    <a href="#details" class="btn btn-secondary">View Event Details</a>
+                </div>
+
+                <div class="hero-meta">
+                    <div class="meta-card">
+                        <span class="meta-label">Ceremony</span>
+                        <strong>4:00 PM</strong>
+                    </div>
+                    <div class="meta-card">
+                        <span class="meta-label">Reception</span>
+                        <strong>6:00 PM</strong>
+                    </div>
+                    <div class="meta-card">
+                        <span class="meta-label">Location</span>
+                        <strong>Villa Aurelia</strong>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-media">
+                <!-- Replace this file with your real hero image or change the src -->
+                <img
+                        src="images/hero-placeholder.svg"
+                        alt="Wedding hero placeholder image"
+                        class="hero-image"
+                />
+                <div class="floating-note">
+                    <span>“A lifetime of love begins here.”</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================
+         OUR STORY
+         ========================= -->
+    <section class="section reveal" id="story">
+        <div class="container">
+            <div class="section-intro center">
+                <p class="section-kicker">Our Story</p>
+                <h2>A love story built on friendship, laughter and shared adventures</h2>
+                <p>
+                    What began with a simple conversation turned into years of unforgettable memories,
+                    long walks, spontaneous trips and a partnership that feels like home.
+                </p>
+            </div>
+
+            <div class="story-grid">
+                <div class="story-image-wrap">
+                    <!-- Replace with a real couple image -->
+                    <img
+                            src="images/photo-placeholder.svg"
+                            alt="Couple story placeholder image"
+                            class="story-image"
+                            loading="lazy"
+                    />
+                </div>
+
+                <div class="story-content">
+                    <p>
+                        We met through mutual friends on a quiet autumn evening and spent hours talking as
+                        if we had known each other forever. Over time, our connection grew into something
+                        deeply rooted, gentle and full of joy.
+                    </p>
+
+                    <p>
+                        Since then, life has taken us across cities, celebrations, everyday rituals and
+                        big dreams. Through every season, we have learned that the best parts of life are
+                        the ones shared together.
+                    </p>
+
+                    <div class="story-milestones">
+                        <article class="milestone">
+                            <span class="milestone-year">2019</span>
+                            <div>
+                                <h3>First Meeting</h3>
+                                <p>We met at a dinner party and talked until the restaurant closed.</p>
+                            </div>
+                        </article>
+
+                        <article class="milestone">
+                            <span class="milestone-year">2022</span>
+                            <div>
+                                <h3>Our Favorite Trip</h3>
+                                <p>A summer escape to Tuscany became one of the most meaningful memories we share.</p>
+                            </div>
+                        </article>
+
+                        <article class="milestone">
+                            <span class="milestone-year">2025</span>
+                            <div>
+                                <h3>The Proposal</h3>
+                                <p>A quiet sunset, a heartfelt promise and the easiest “yes” we have ever said.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================
+         EVENT DETAILS
+         ========================= -->
+    <section class="section section-soft reveal" id="details">
+        <div class="container">
+            <div class="section-intro center">
+                <p class="section-kicker">Event Details</p>
+                <h2>Everything you need for the day</h2>
+                <p>
+                    Please arrive a little early so we can begin the ceremony on time and enjoy the full
+                    celebration together.
+                </p>
+            </div>
+
+            <div class="details-grid">
+                <article class="detail-card">
+                    <p class="detail-label">Date</p>
+                    <h3>Sunday, June 21, 2026</h3>
+                    <p>Guests are welcome from 3:15 PM.</p>
+                </article>
+
+                <article class="detail-card">
+                    <p class="detail-label">Ceremony</p>
+                    <h3>Villa Aurelia Garden</h3>
+                    <p>4:00 PM</p>
+                    <p>Via delle Rose 18, Florence, Italy</p>
+                    <a
+                            href="https://maps.google.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="text-link"
+                    >
+                        Open in Maps
+                    </a>
+                </article>
+
+                <article class="detail-card">
+                    <p class="detail-label">Reception</p>
+                    <h3>Villa Aurelia Terrace Hall</h3>
+                    <p>6:00 PM until late</p>
+                    <p>Same venue as ceremony</p>
+                    <a
+                            href="https://maps.google.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="text-link"
+                    >
+                        Open in Maps
+                    </a>
+                </article>
+
+                <article class="detail-card">
+                    <p class="detail-label">Additional Notes</p>
+                    <h3>Parking & Arrival</h3>
+                    <p>
+                        Complimentary on-site parking is available. A shuttle will also run from the city
+                        center for guests staying in Florence.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================
+         TIMELINE
+         ========================= -->
+    <section class="section reveal" id="timeline">
+        <div class="container">
+            <div class="section-intro center">
+                <p class="section-kicker">Wedding Day Timeline</p>
+                <h2>A relaxed and joyful flow for the celebration</h2>
+                <p>
+                    Here is a quick overview of the main moments of the day so everyone knows what to expect.
+                </p>
+            </div>
+
+            <div class="timeline">
+                <article class="timeline-item">
+                    <div class="timeline-time">3:15 PM</div>
+                    <div class="timeline-content">
+                        <h3>Guest Arrival</h3>
+                        <p>Welcome drinks and arrival at Villa Aurelia.</p>
+                    </div>
+                </article>
+
+                <article class="timeline-item">
+                    <div class="timeline-time">4:00 PM</div>
+                    <div class="timeline-content">
+                        <h3>Ceremony</h3>
+                        <p>Outdoor ceremony in the garden overlooking the hills.</p>
+                    </div>
+                </article>
+
+                <article class="timeline-item">
+                    <div class="timeline-time">5:00 PM</div>
+                    <div class="timeline-content">
+                        <h3>Aperitivo & Photos</h3>
+                        <p>Cocktails, live music and time to celebrate together.</p>
+                    </div>
+                </article>
+
+                <article class="timeline-item">
+                    <div class="timeline-time">6:30 PM</div>
+                    <div class="timeline-content">
+                        <h3>Dinner Reception</h3>
+                        <p>Seated dinner, speeches and a beautiful evening under the lights.</p>
+                    </div>
+                </article>
+
+                <article class="timeline-item">
+                    <div class="timeline-time">9:30 PM</div>
+                    <div class="timeline-content">
+                        <h3>Cake & Dancing</h3>
+                        <p>Dessert, music and dancing until late.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================
+         TRAVEL & ACCOMMODATION
+         ========================= -->
+    <section class="section section-soft reveal" id="travel">
+        <div class="container">
+            <div class="section-intro center">
+                <p class="section-kicker">Travel & Accommodation</p>
+                <h2>Helpful notes for guests travelling from out of town</h2>
+                <p>
+                    We recommend booking accommodation early, especially if you plan to stay in central Florence.
+                </p>
+            </div>
+
+            <div class="travel-grid">
+                <article class="travel-card">
+                    <h3>Recommended Hotels</h3>
+                    <ul>
+                        <li>Hotel Palazzo Bianca — 10 min from venue</li>
+                        <li>Relais Santa Maria — boutique option in the center</li>
+                        <li>Villa Serena Suites — quiet countryside stay</li>
+                    </ul>
+                </article>
+
+                <article class="travel-card">
+                    <h3>Transport</h3>
+                    <ul>
+                        <li>Florence Airport: approx. 30 minutes by car</li>
+                        <li>Santa Maria Novella Station: approx. 20 minutes by taxi</li>
+                        <li>Evening shuttle available after reception</li>
+                    </ul>
+                </article>
+
+                <article class="travel-card">
+                    <h3>Logistics</h3>
+                    <ul>
+                        <li>Check-in the day before is highly recommended</li>
+                        <li>Taxis should be booked in advance for late return</li>
+                        <li>Weather in June is usually warm — bring a light layer for the evening</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================
+         DRESS CODE
+         ========================= -->
+    <section class="section reveal" id="dress-code">
+        <div class="container">
+            <div class="dress-code-box">
+                <p class="section-kicker">Dress Code</p>
+                <h2>Black Tie Optional</h2>
+                <p>
+                    We kindly invite you to dress in elegant, formal attire. Think timeless silhouettes,
+                    soft evening tones and refined celebration style.
+                </p>
+                <p class="dress-note">
+                    Ceremony will take place outdoors, so comfortable shoes for garden pathways are recommended.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================
+         GALLERY
+         ========================= -->
+    <section class="section section-soft reveal" id="gallery">
+        <div class="container">
+            <div class="section-intro center">
+                <p class="section-kicker">Gallery</p>
+                <h2>A few moments we love</h2>
+                <p>
+                    Replace these placeholders with engagement photos, portraits or details from your wedding aesthetic.
+                </p>
+            </div>
+
+            <div class="gallery-grid">
+                <!-- Replace these image sources with your real gallery images -->
+                <button class="gallery-card" type="button" aria-label="Open gallery image 1">
+                    <img src="images/photo-placeholder.svg" alt="Gallery image 1" loading="lazy" />
+                </button>
+
+                <button class="gallery-card tall" type="button" aria-label="Open gallery image 2">
+                    <img src="images/photo-placeholder.svg" alt="Gallery image 2" loading="lazy" />
+                </button>
+
+                <button class="gallery-card" type="button" aria-label="Open gallery image 3">
+                    <img src="images/photo-placeholder.svg" alt="Gallery image 3" loading="lazy" />
+                </button>
+
+                <button class="gallery-card wide" type="button" aria-label="Open gallery image 4">
+                    <img src="images/photo-placeholder.svg" alt="Gallery image 4" loading="lazy" />
+                </button>
+
+                <button class="gallery-card" type="button" aria-label="Open gallery image 5">
+                    <img src="images/photo-placeholder.svg" alt="Gallery image 5" loading="lazy" />
+                </button>
+
+                <button class="gallery-card" type="button" aria-label="Open gallery image 6">
+                    <img src="images/photo-placeholder.svg" alt="Gallery image 6" loading="lazy" />
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================
+         RSVP
+         ========================= -->
+    <section class="section reveal" id="rsvp">
+        <div class="container rsvp-layout">
+            <div class="rsvp-copy">
+                <p class="section-kicker">RSVP</p>
+                <h2>Please let us know if you’ll be joining us</h2>
+                <p>
+                    Kindly respond by <strong>May 15, 2026</strong>. Your reply helps us plan the day with care.
+                </p>
+
+                <div class="rsvp-notes">
+                    <div class="rsvp-note-card">
+                        <h3>Food Preferences</h3>
+                        <p>Please include any dietary requirements, allergies or special notes in the form.</p>
+                    </div>
+
+                    <div class="rsvp-note-card">
+                        <h3>Plus Ones</h3>
+                        <p>Use the guest count field to confirm how many people are included in your invitation.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rsvp-form-wrap">
+                <!--
+                  FORMspree setup:
+                  1) Create a form at formspree.io
+                  2) Replace YOUR_FORM_ID below with your real ID
+                  3) Example: https://formspree.io/f/xblyzabc
+                -->
+                <form
+                        id="rsvp-form"
+                        class="rsvp-form"
+                        action="https://formspree.io/f/YOUR_FORM_ID"
+                        method="POST"
+                >
+                    <input type="hidden" name="_subject" value="New Wedding RSVP Submission" />
+                    <input type="text" name="_gotcha" class="hidden-field" tabindex="-1" autocomplete="off" />
+
+                    <div class="form-group">
+                        <label for="full-name">Full Name</label>
+                        <input id="full-name" name="full_name" type="text" placeholder="Your full name" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" placeholder="your@email.com" required />
+                    </div>
+
+                    <fieldset class="form-group">
+                        <legend>Will you attend?</legend>
+                        <div class="radio-group">
+                            <label class="radio-card">
+                                <input type="radio" name="attendance" value="Yes" checked />
+                                <span>Joyfully Accept</span>
+                            </label>
+
+                            <label class="radio-card">
+                                <input type="radio" name="attendance" value="No" />
+                                <span>Regretfully Decline</span>
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <div class="form-group">
+                        <label for="guest-count">Number of Guests</label>
+                        <input
+                                id="guest-count"
+                                name="guest_count"
+                                type="number"
+                                min="1"
+                                max="6"
+                                value="1"
+                                required
+                        />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dietary">Dietary Requirements</label>
+                        <input
+                                id="dietary"
+                                name="dietary_requirements"
+                                type="text"
+                                placeholder="Vegetarian, vegan, gluten-free..."
+                        />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="allergies">Allergies</label>
+                        <input
+                                id="allergies"
+                                name="allergies"
+                                type="text"
+                                placeholder="Please specify any allergies"
+                        />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message or Notes</label>
+                        <textarea
+                                id="message"
+                                name="message"
+                                rows="5"
+                                placeholder="Leave a message for the couple..."
+                        ></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-full" id="submit-btn">
+                        Send RSVP
+                    </button>
+
+                    <p class="form-status" id="form-status" aria-live="polite"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================
+         SEATING PLAN
+         ========================= -->
+    <section class="section section-soft reveal" id="seating">
+        <div class="container">
+            <div class="section-intro center">
+                <p class="section-kicker">Seating Plan</p>
+                <h2>Your wedding tables, rendered automatically from JavaScript</h2>
+                <p>
+                    This section is intentionally designed to be easy to update. Just edit the table data
+                    in <strong>script.js</strong> and the layout will regenerate automatically.
+                </p>
+            </div>
+
+            <!-- Tables are generated by JavaScript -->
+            <div class="tables-grid" id="tables-grid"></div>
+        </div>
+    </section>
+</main>
+
+<!-- =========================
+     FOOTER
+     ========================= -->
+<footer class="site-footer">
+    <div class="container footer-inner">
+        <p class="footer-title">Charlotte & Oliver</p>
+        <p class="footer-text">
+            Thank you for being part of our celebration. We cannot wait to share this beautiful day with you.
+        </p>
+        <p class="footer-small">With love, always • <span id="current-year"></span></p>
+    </div>
+</footer>
+
+<!-- =========================
+     GALLERY LIGHTBOX
+     ========================= -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightbox-close" type="button" aria-label="Close image preview">
+        ×
+    </button>
+    <img id="lightbox-image" src="" alt="Expanded gallery image" />
+</div>
 </body>
 </html>
